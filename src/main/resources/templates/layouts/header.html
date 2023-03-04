@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<header class="container" xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security" th:fragment="header">
+    <span class="logo">Diplom</span>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/about-us">О нас</a>
+    </nav>
+
+    <form class="poisk" action="" method="get">
+        <input name="s" placeholder="Поиск" type="text" hidden="Поиск">
+    </form>
+    <button class="poiskbtn" type="submit">Поиск</button>
+</header>

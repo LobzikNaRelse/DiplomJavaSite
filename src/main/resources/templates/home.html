@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" th:href="@{/main2.css}">
+</head>
+<body>
+<div th:replace="layouts/header :: header">
+
+</div>
+
+<h1> Все ссылки </h1>
+
+<div th:each="el : ${posts}">
+    <h3 th:text="'· Ссылка: '"></h3><a class="spisokssilok" th:href="${el.fullart}" th:text="'/' + ${el.smallart}"></a>
+</div>
+<div th:if="${posts.isEmpty()}">
+    <p>Нет ссылок</p>
+</div>
+
+<h1> Добавление ссылки </h1>
+
+<form action="/" method="post" >
+    <input class="addssilok" type="text" name="fullart" placeholder="Введите полную ссылку"><br>
+    <input class="addssilok" type="text" name="smallart" placeholder="Введите сокращение"><br>
+    <button class="addssilok" type="submit">Добавить ссылку</button>
+    <h1 th:text="${res}"/>
+</form>
+
+</body>
+</html>

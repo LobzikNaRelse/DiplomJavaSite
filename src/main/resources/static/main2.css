@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+  background: #fcfcfc;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+
+header
+{
+    background: #222;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+a
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: #7c7d80;
+  transition: color 500ms ease;
+  padding-left: 65px;
+}
+
+.container
+{
+  width: 0 auto;
+  margin: 0 auto;
+}
+
+header .logo
+{
+  color: white;
+  font-size: 25px;
+  top: 30px;
+  padding: 15px;
+}
+
+header .poisk
+{
+  padding-left: 50%;
+}
+
+form input, form textarea
+{
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin: 10px;
+  resize: none;
+}
+
+form button
+{
+  margin: 10px;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #cb5e49;
+  transition: background 500ms ease;
+}
+
+header .poiskbtn
+{
+  margin: 10px;
+  padding: 10px 25px;
+  border: 2;
+  border-color: #cb5e49;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 500ms ease;
+  background: rgba(235, 93, 11, 0);
+}
+
+input::-webkit-input-placeholder 
+{
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: white;
+}
+
+input:-moz-placeholder 
+{
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: white;
+}
+
+input:-ms-input-placeholder 
+{
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: white;
+}
+
+h1
+{
+  padding: 15px;
+  padding-left: 85px;
+}
+
+
+h3
+{
+  margin-left: 115px;
+}
+h3, div .spisokssilok
+{
+  display: inline-flex;
+  padding: 8px;
+}
+div .spisokssilok
+{
+  color: rgb(61, 127, 250);
+}
+
+form .addssilok
+{
+  margin-left: 115px;
+}
